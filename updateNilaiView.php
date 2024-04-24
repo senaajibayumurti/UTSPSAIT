@@ -34,11 +34,10 @@ $json = json_decode($res, true);
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-5 mb-3">
                         <div class="page-header">
                             <h2>Update Data</h2>
                         </div>
-                        <p>Please fill this form and submit to update game record in the database.</p>
                         <form action="updateNilaiDo.php" method="post">
                             <input type = "hidden" name="nim" value="<?php echo"$nim";?>">
                             <input type = "hidden" name="kode_mk" value="<?php echo"$kode_mk";?>">

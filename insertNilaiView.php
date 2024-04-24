@@ -29,8 +29,7 @@
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                    <p>Please fill this form and submit to add a new game record to the database.</p>
+                <div class="col-md-12 mt-5 mb-3">
                     <form action="insertNilaiDo.php" method="post">
                         <div class="form-group">
                             <label>NIM</label>
