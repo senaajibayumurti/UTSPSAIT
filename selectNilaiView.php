@@ -38,7 +38,7 @@
                 <a class="nav-link active" aria-current="true" href="selectNilaiView.php">Nilai</a>
             </li>
             <li class="nav-item">
-                <a href="insertNilaiView.php" class="nav-link"> Add New</a>
+                <a href="insertNilaiView.php" class="nav-link"> Add</a>
             </li>
         </ul>
     </div>
@@ -83,7 +83,7 @@
                                     echo "<td> {$json["data"][$i]["nilai"]} </td>";
                                     echo "<td class='w-auto'>";
                                         echo '<a href="updateNilaiView.php?nim='. $json["data"][$i]["nim"] . '&kode_mk=' . $json["data"][$i]["kode_mk"] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
-                                        echo '<a href="updateNilaiDo.php?nim='. $json["data"][$i]["nim"] . '&kode_mk=' . $json["data"][$i]["kode_mk"] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';                                    
+                                        echo '<a href="deleteNilaiDo.php?nim='. $json["data"][$i]["nim"] . '&kode_mk=' . $json["data"][$i]["kode_mk"] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';                                    
                                     echo "</td>";
                                 echo "</tr>";
                             }

@@ -1,9 +1,10 @@
 <?php
 
-$games_id = $_GET['games_id'];
+$nim = $_GET['nim'];
+$kode_mk = $_GET['kode_mk'];
 
 // Pastikan sesuai dengan alamat endpoint dari REST API di ubuntu
-$url = 'http://localhost/psait_pert_7/mahasiswa_api.php?games_id=' . $games_id;
+$url = 'http://localhost/psait_uts/mahasiswa_api.php?nim='.$nim.'&kode_mk='.$kode_mk.'';    
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -18,8 +19,10 @@ curl_close($ch);
 
 // Tampilkan return statusnya, apakah sukses atau tidak
 print("<center><br>Status: {$result["status"]} "); 
-print("<br>Message: {$result["message"]} "); 
+print("<br>");  
+print("message :  {$result["message"]} "); 
+
 echo "<br>Sukses menghapus data di ubuntu server !";
-echo "<br><a href=selectGamesView.php> OK </a>";
+echo "<br><a href=selectNilaiView.php> OK </a>";
 
 ?>

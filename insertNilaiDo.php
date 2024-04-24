@@ -2,13 +2,9 @@
 
 if(isset($_POST['submit']))
 {    
-    $games_name = $_POST['games_name'];
-    $games_description = $_POST['games_description'];
-    $games_main_type = $_POST['games_main_type'];
-    $games_main_genre = $_POST['games_main_genre'];
-    $games_price = $_POST['games_price'];
-    $games_publisher = $_POST['games_publisher'];
-    $games_developer = $_POST['games_developer'];
+    $nim = $_POST['nim'];
+    $kode_mk = $_POST['kode_mk'];
+    $nilai = $_POST['nilai'];
 
     // Pastikan sesuai dengan alamat endpoint dari REST API di ubuntu
     $url = 'http://localhost/UTSPSAIT/nilai_mahasiswa_api.php';
@@ -16,13 +12,9 @@ if(isset($_POST['submit']))
     
     // Data yang akan dikirim ke REST API, dengan format JSON
     $jsonData = array(
-        'games_name' =>  $games_name,
-        'games_description' =>  $games_description,
-        'games_main_type' =>  $games_main_type,
-        'games_main_genre' =>  $games_main_genre,
-        'games_price' =>  $games_price,
-        'games_publisher' =>  $games_publisher,
-        'games_developer' =>  $games_developer
+        'nim' =>  $nim,
+        'kode_mk' =>  $kode_mk,
+        'nilai' =>  $nilai,
     );
 
     //Encode the array into JSON.
@@ -49,6 +41,6 @@ if(isset($_POST['submit']))
     print("<center><br>Status: {$result["status"]} "); 
     print("<br>Message: {$result["message"]} "); 
     echo "<br>Sukses terkirim ke ubuntu server !";
-    echo "<br><a href=selectGamesView.php> OK </a>";
+    echo "<br><a href=selectNilaiView.php> OK </a>";
 }
 ?>

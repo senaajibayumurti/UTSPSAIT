@@ -19,10 +19,10 @@
         <h1 class="text-center">UTS PSAIT</h1>
         <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-                <a class="nav-link" aria-current="true" href="selectNilaiView.php">Games</a>
+                <a class="nav-link" aria-current="true" href="selectNilaiView.php">Nilai</a>
             </li>
             <li class="nav-item">
-                <a href="insertNilaiView.php" class="nav-link active"> Add New</a>
+                <a href="insertNilaiView.php" class="nav-link active"> Add</a>
             </li>
         </ul>
     </div>
@@ -31,19 +31,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <p>Please fill this form and submit to add a new game record to the database.</p>
-                    <form action="insertGamesDo.php" method="post">
+                    <form action="insertNilaiDo.php" method="post">
                         <div class="form-group">
-                            <label>Games Name</label>
+                            <label>NIM</label>
                             <input type="text" name="nim" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Games Description</label>
+                            <label>Kode Mata Kuliah</label>
                             <input type="text" name="kode_mk" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Games Main Type</label>
+                            <label>Nilai</label>
                             <input type="text" name="nilai" class="form-control">
                         </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-3" name="submit" value="submit">Tambah</button>
                     </form>
                 </div>
             </div>        
