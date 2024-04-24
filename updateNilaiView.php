@@ -44,6 +44,7 @@ $json = json_decode($res, true);
                             <input type = "hidden" name="kode_mk" value="<?php echo"$kode_mk";?>">
                             <div class="form-group">
                                 <label>Nilai</label>
+                                <!-- TODO = fixing " Trying to access array offset on value of type null"-->
                                 <input type="text" name="nilai" class="form-control" value="<?php echo ($json["data"][0]["nilai"]); ?>">
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mt-3" name="submit" value="submit">Simpan</button>

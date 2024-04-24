@@ -18,6 +18,7 @@ $result = json_decode($result, true);
 curl_close($ch);
 
 // Tampilkan return statusnya, apakah sukses atau tidak
+// TODO = Fixing "Trying to access array offset on value of type null in line 22 and 24", it prevents on deleting the data
 print("<center><br>Status: {$result["status"]} "); 
 print("<br>");  
 print("message :  {$result["message"]} "); 
